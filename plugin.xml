@@ -25,6 +25,10 @@
       <header-file src="src/ios/AppDelegate+IntercomPush.h" />
       <source-file src="src/ios/AppDelegate+IntercomPush.m" />
 
+      <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+        <string>${EXECUTABLE_NAME} Would Like to Access to Your Photo Library for Uploading Images in Messages.</string>
+      </config-file>
+
       <config-file target="config.xml" parent="/*">
         <feature name="Intercom">
           <param name="ios-package" value="IntercomBridge" />
